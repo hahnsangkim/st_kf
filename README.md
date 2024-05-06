@@ -32,11 +32,8 @@ Ensure you have the following installed:
 3. **Create a Virtual Environment (Recommended)**
     Set up a virtual environment to isolate dependencies. You can use pipenv:
     ```bash
-    pipenv shell
-
-    If you encounter a not-installed error, run
-    ```bash
     pip install pipenv
+    pipenv shell
 
 4. **Install Dependencies**
     With the virtual environment activated, install the packages listed in `requirements.txt`:
