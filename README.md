@@ -1,6 +1,15 @@
 # Battery Modeling using Kalman Filter
 
-Brief description of your project. Provide an overview of what it does and its key features.
+This code demonstrates a simple example of linear battery modeling using a linear Kalman Filter. The battery model includes:
+**State Transition Function**: Models the state of charge (SOC) of the battery over time, considering input factors that affect charge levels.
+**Emission Function**: Provides a way to measure battery voltage, enabling the Kalman Filter to estimate the state of charge based on observed voltage measurements.
+
+### Key Features
+- **Battery SOC Estimation**: Predicts the state of charge accurately over a series of iterations using known system dynamics.
+- **Voltage Measurement Analysis**: Uses a voltage measurement function to refine the SOC estimate.
+- **Error Covariance Updates**: Continuously updates error covariance to improve subsequent predictions.
+
+The linear Kalman Filter approach implemented here serves as a foundational example that can be further adapted or expanded to suit more sophisticated battery models.
 
 ## Prerequisites
 
@@ -13,12 +22,12 @@ Ensure you have the following installed:
 1. **Clone the Repository**  
    First, clone this repository to your local machine using:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/your-username/st_kf.git
 
 2. **Navigate to the Project Directory**
     Change to the project directory:
     ```bash
-    cd your-repo-name
+    cd st_kf
 
 3. **Create a Virtual Environment (Recommended)**
     Set up a virtual environment to isolate dependencies. You can use pipenv:
